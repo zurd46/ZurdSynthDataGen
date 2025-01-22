@@ -6,7 +6,7 @@ This Electron project uses the OpenAI ChatCompletion API to generate synthetic d
 
 - **Electron app** (GUI) with Materialize CSS in dark mode
 - **Language selection** (DE/EN)
-- **Model selection** (e.g., `gpt-4`, `gpt-4o`, etc.)
+- **Model selection** (e.g., `gpt-4`, `gpt-3.5-Turbo`, etc.)
 - **Continuous appending** to `train.jsonl`, `val.jsonl`, and `test.jsonl` (no overwriting)
 - **UI table** only shows entries from `train.jsonl` (train split)
 
