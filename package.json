@@ -1,7 +1,7 @@
 {
     "name": "Zurd SynthDataGen",
     "version": "1.0.0",
-    "description": "Electron App, die synthetische Datensätze via GPT-4 generiert",
+    "description": "Electron app that generates synthetic data sets via OpenAI API",
     "main": "src/main.js",
     "scripts": {
       "start": "electron ."
