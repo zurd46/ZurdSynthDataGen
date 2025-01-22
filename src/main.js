@@ -1,5 +1,5 @@
 /****************************************
- * main.js (vollständige Version)
+ * main.js 
  ****************************************/
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
