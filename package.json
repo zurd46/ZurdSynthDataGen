@@ -1,0 +1,17 @@
+{
+    "name": "Zurd SynthDataGen",
+    "version": "1.0.0",
+    "description": "Electron App, die synthetische Datensätze via GPT-4 generiert",
+    "main": "src/main.js",
+    "scripts": {
+      "start": "electron ."
+    },
+    "author": "Daniel Zurmühle",
+    "license": "MIT",
+    "dependencies": {
+      "dotenv": "^16.0.0",
+      "electron": "^24.0.0",
+      "openai": "^3.2.1"
+    }
+  }
+  

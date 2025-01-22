@@ -1,0 +1,73 @@
+body {
+  background-color: #121212; /* Dark Mode */
+  color: #ffffff;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.input-field label {
+  color: #ffffff;
+}
+
+/* Farbe des Texts in Inputs */
+.input-field input {
+  color: #ffffff !important;
+}
+
+/* Fokusfarben */
+.input-field input:focus + label {
+  color: #03dac5; /* Material dunkles Türkis */
+}
+.input-field input:focus {
+  border-bottom: 1px solid #03dac5 !important;
+  box-shadow: 0 1px 0 0 #03dac5 !important;
+}
+
+/* Button-Farbe */
+.btn {
+  background-color: #03dac5 !important;
+  color: #000000 !important;
+}
+
+/* Ergebnisbox */
+#result {
+  white-space: pre-wrap;
+  margin-top: 20px;
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+/* 
+ * Dropdown-Caret (Pfeil) weiß einfärben.
+ * Wir verwenden ein typisches "CSS-Dreieck" (border approach).
+ */
+.select-wrapper .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 6px;          /* etwas Abstand zum Text */
+  vertical-align: middle;
+  border-left: 4px solid transparent !important;
+  border-right: 4px solid transparent !important;
+  border-top: 6px solid #ffffff !important; /* Weißer Pfeil */
+}
+
+/* Eingabefeld (ausgewählter Wert) im Dropdown weiß anzeigen */
+.select-wrapper input.select-dropdown {
+  color: #ffffff !important;
+}
+
+/* Hintergrund des Dropdowns dunkel */
+.dropdown-content {
+  background-color: #1e1e1e !important;
+}
+
+/* Einträge im Dropdown-Menü ebenfalls weiß */
+.dropdown-content li > a,
+.dropdown-content li > span {
+  color: #ffffff !important;
+}

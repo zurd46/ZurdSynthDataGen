@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Zurd SynthDataGen</title>
+    <!-- Materialize CSS (Dark Mode) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Optional: Your own dark-mode/style overrides -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h4>Zurd SynthDataGen</h4>
+      <br />
+      <div class="row">
+        <!-- Topic Input (6 Spalten) -->
+        <div class="input-field col s6">
+          <input id="theme" type="text" />
+          <label for="theme">Topic</label>
+        </div>
+
+        <!-- Number Input (2 Spalten) -->
+        <div class="input-field col s2">
+          <input id="number" type="number" min="1" value="5" />
+          <label for="number">Number</label>
+        </div>
+
+        <!-- Model Dropdown (3 Spalten) -->
+        <div class="input-field col s3">
+          <select id="modelSelect">
+            <option value="GPT-4">GPT-4</option>
+            <option value="GPT-3.5 Turbo">GPT-3.5 Turbo</option>
+          </select>
+          <label for="modelSelect">Model</label>
+        </div>
+
+        <!-- Language Dropdown (1 Spalte) -->
+        <div class="input-field col s1">
+          <select id="languageSelect">
+            <option value="DE" selected>DE</option>
+            <option value="EN">EN</option>
+          </select>
+          <label for="languageSelect">Language</label>
+        </div>
+      </div>
+
+      <!-- Generate Button -->
+      <button class="btn" id="generateBtn">Generate</button>
+      <!-- Display the result here -->
+      <div id="result"></div>
+    </div>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Initialize Materialize dropdowns -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        M.FormSelect.init(elems);
+      });
+    </script>
+
+    <!-- Your Renderer Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
