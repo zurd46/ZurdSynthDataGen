@@ -38,3 +38,8 @@ This Electron project uses the OpenAI ChatCompletion API to generate synthetic d
    ```bash
    npm start
    ```
+5. **EXE File genarate:**
+   This will generate a exe file for Windows.
+   ```bash
+   npm run dist
+   ```
