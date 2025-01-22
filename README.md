@@ -25,3 +25,23 @@ This Electron project uses the OpenAI API (ChatCompletion) to generate synthetic
    ```bash
    git clone https://github.com/zurd46/ZurdSynthDataGen.git
    cd ZurdSynthDataGen
+```
+Install dependencies:
+
+## 2. 
+```bash
+   npm install
+```
+## Set up your OpenAI API key:
+   Create a .env file in the project root and add:
+
+   OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxx
+
+   (Ensure .env is in your .gitignore so it isn’t accidentally committed.)
+
+
+## Start the app:
+```
+npm start
+```
+This will open an Electron window with the Zurd SynthDataGen interface.
